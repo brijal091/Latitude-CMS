@@ -16,10 +16,14 @@ const UserSchema = new Schema(
       type: String,
       required: true,
     },
-    date: {
-      type: Date,
-      default: Date.now,
+    isAdmin:{
+      type : Boolean ,
+      default: false
     },
+    isClient:{
+      type: Boolean,
+      default: false
+    }
   },
   {
     timestamps: true,
