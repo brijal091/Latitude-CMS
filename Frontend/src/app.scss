@@ -1,10 +1,12 @@
+@import "../src/scss/variable.scss";
+
 * {
+  font-family: $gilroy-medium;
   padding: 0px;
   margin: 0px;
   button {
     cursor: pointer;
   }
-  text-align: center;
 }
 
 body {
