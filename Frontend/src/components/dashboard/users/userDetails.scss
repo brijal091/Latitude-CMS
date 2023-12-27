@@ -1,0 +1,83 @@
+@import "../../../scss/base.scss";
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 15px;
+  border-radius: 5px;
+  //   overflow: hidden;
+
+  @media only screen and (max-width: 767px) {
+    // border: 1px solid;
+    width: 90%;
+    margin: auto;
+  }
+
+  //   .client-data{
+
+  //     @media only screen and (max-width: 767px) {
+  //         border: 1px solid;
+  //         width: 90%;
+  //         margin: 10px auto;
+  //       }
+
+  //   }
+
+  .user-image-container {
+    align-items: center;
+    display: flex;
+    gap: 20px;
+
+    @media only screen and (max-width: 767px) {
+      flex-direction: column;
+    }
+  }
+
+  td,
+  th {
+    padding: 8px;
+    @media only screen and (max-width: 767px) {
+      display: block;
+    }
+  }
+
+  th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #f7fafc;
+
+    @media only screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  .image-wrapper {
+    @include divImgWrapper($width: 50px, $height: 50px);
+    border-radius: 50%;
+    border: 1px solid;
+
+    img {
+      @include img-wrapper;
+    }
+  }
+
+  .user-edit-icons {
+    display: flex;
+    gap: 20px;
+
+    @media only screen and (max-width: 767px) {
+      font-size: 30px;
+      justify-content: space-between;
+    }
+  }
+
+  input {
+    @media only screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+
+
+}

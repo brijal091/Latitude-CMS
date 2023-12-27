@@ -7,11 +7,18 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-//   border: 1px solid;
+  //   border: 1px solid;
   border-radius: 5px;
   padding: 2%;
   // background-image: url(../../assets/images/form.jpg);
   // background-size: contain;
+
+
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    width: 60%;
+  }
+
+
 
   form {
     // border: 1px solid;
