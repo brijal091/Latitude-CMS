@@ -13,13 +13,12 @@
   // background-image: url(../../assets/images/form.jpg);
   // background-size: contain;
 
+
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
     width: 60%;
   }
 
-  @media only screen and (max-width: 767px) {
-    width: 100%;
-  }
+
 
   form {
     // border: 1px solid;
