@@ -2,13 +2,25 @@ import React from "react";
 import "./admin.scss";
 import { CiUser } from "react-icons/ci";
 import { IoKeyOutline } from "react-icons/io5";
+import { useNavigate } from "react-router-dom";
 
 const Admin = () => {
+
+  const navigate =  useNavigate()
+
+   const handleSubmit = () => {
+   
+      navigate('/admin/dashboard')
+
+   }
+  
+
+
   return (
     <div className="admin-container">
       <h1>Admin Login</h1>
       <p>Control Panel Login</p>
-      <form>
+      <form onSubmit={handleSubmit}>
         <div className="admin-creds">
           <p>
             <CiUser />
