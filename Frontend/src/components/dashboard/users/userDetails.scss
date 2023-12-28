@@ -71,6 +71,12 @@
       font-size: 30px;
       justify-content: space-between;
     }
+
+    .user-icons {
+      & :hover {
+        cursor: pointer;
+      }
+    }
   }
 
   input {
@@ -78,6 +84,4 @@
       display: none;
     }
   }
-
-
 }

@@ -33,10 +33,10 @@ const UserDetails = () => {
           <td className="property">Property</td>
           <td>
             <div className="user-edit-icons">
-              <div>
+              <div className="user-icons">
                 <FaRegEdit />
               </div>
-              <div>
+              <div className="user-icons">
                 <IoTrashBinOutline />
               </div>
             </div>
@@ -62,10 +62,10 @@ const UserDetails = () => {
           <td className="hotel">Hotel</td>
           <td>
             <div className="user-edit-icons">
-              <div>
+              <div className="user-icons">
                 <FaRegEdit />
               </div>
-              <div>
+              <div className="user-icons">
                 <IoTrashBinOutline />
               </div>
             </div>
@@ -91,10 +91,10 @@ const UserDetails = () => {
           <td className="ecom">Ecom</td>
           <td>
             <div className="user-edit-icons">
-              <div>
+              <div className="user-icons">
                 <FaRegEdit />
               </div>
-              <div>
+              <div className="user-icons">
                 <IoTrashBinOutline />
               </div>
             </div>

@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import "./dashboard.scss";
 import DashNav from "../../components/dashboard/dashnav/DashNav";
@@ -33,5 +32,3 @@ const Dashboard = () => {
 };
 
 export default Dashboard;
-
-

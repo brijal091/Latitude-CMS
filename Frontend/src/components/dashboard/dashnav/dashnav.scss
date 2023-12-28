@@ -1,7 +1,8 @@
 // @import "../../scss/base.scss";
 
 .navbar {
-  background-color: #f7fafc;
+  background-color: #7065f0;
+  color: #fff;
   padding: 10px;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -18,7 +19,7 @@
 
     .remove-link-decor {
       text-decoration: none;
-      color: black;
+      color: white;
     }
 
     .menu-icon {
@@ -58,7 +59,7 @@
       font-size: 25px;
       background: none;
       font-weight: bold;
-      color: black;
+      color: white;
 
       @media screen and (max-width: 48em) {
         padding: 8px 18px;

@@ -13,12 +13,13 @@
   // background-image: url(../../assets/images/form.jpg);
   // background-size: contain;
 
-
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
     width: 60%;
   }
 
-
+  @media only screen and (max-width: 767px) {
+    width: 100%;
+  }
 
   form {
     // border: 1px solid;
@@ -46,11 +47,15 @@
         padding: 2%;
         border: 0.1px solid grey;
       }
+
+      input:focus {
+        outline: 1px solid #7065f0;
+      }
     }
 
     button {
       color: white;
-      background-color: #f77c36;
+      background-color: #7065f0;
       border: none;
       width: 95%;
       margin: auto;
