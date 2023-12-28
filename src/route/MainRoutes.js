@@ -6,6 +6,7 @@ import Admin from "../pages/admin/Admin";
 import Dashboard from "../pages/Dashboard/Dashboard";
 import Property from "../pages/property/Property";
 import AddProperty from "../pages/addProperty/AddProperty";
+import LandingPage from "../pages/property/LandingPage";
 
 const MainRoutes = () => {
   return (
@@ -14,7 +15,7 @@ const MainRoutes = () => {
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
       <Route path="/admin/dashboard" element={<Dashboard/>} />
-      <Route path="/property" element={<Property />} />
+      <Route path="/property" element={<LandingPage />} />
       <Route path="/add_property" element={<AddProperty />} />
     </Routes>
   );

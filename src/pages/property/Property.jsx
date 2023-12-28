@@ -1,21 +1,17 @@
 import React from "react";
-import "../property/property.scss";
-import Navbar from "../../components/navbar/Navbar";
-import heroImg from "../../assets/images/hero-img.jpg";
-import Footer from "../../components/footer/Footer";
-import { Link } from "react-router-dom";
+// import "../property/property.scss";
+// import heroImg from "../../assets/images/hero-img.jpg";
+// import { Link } from "react-router-dom";
 
 const Property = () => {
   return (
     <div>
-      <Navbar />
-
-      <div className="property-listing">
+      {/* <div className="property-listing">
         <div className="hero-content">
           <div className="hero-content-text">
             <h1>List Your Property</h1>
             <p>
-              Great platform to list your property. We make it easy for tenants 
+              Great platform to list your property. We make it easy for tenants
               and landlords.
             </p>
 
@@ -55,9 +51,9 @@ const Property = () => {
           <input placeholder="Enter your email address" />
           <button>Submit</button>
         </div>
-      </div>
+      </div> */}
 
-      <Footer />
+
     </div>
   );
 };
