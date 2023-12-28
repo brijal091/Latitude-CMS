@@ -1,0 +1,27 @@
+.hero-section {
+  width: 100%;
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+
+  .hero-content {
+    width: 100%;
+
+    .tags {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+      color: #100a55;
+    }
+  }
+
+  .hero-img {
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+}

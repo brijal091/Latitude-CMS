@@ -1,0 +1,61 @@
+.property-details {
+  width: 100%;
+  margin-bottom: 80px;
+
+  .property-details-form {
+    width: 35%;
+    margin: auto;
+    margin-top: 50px;
+
+    h1 {
+      font-family: "Bebas Neue";
+      letter-spacing: 1px;
+      color: #302e2e;
+    }
+
+    p {
+      color: #727183;
+    }
+
+    form {
+      width: 100%;
+      margin-top: 20px;
+
+      input {
+        width: 100%;
+        padding: 12px;
+        margin-top: 20px;
+        border-radius: 8px;
+        border: 1px solid #cecece;
+        font-size: 15px;
+      }
+
+      input[type="submit"] {
+        margin-top: 25px;
+        padding: 13px;
+        width: 105%;
+        border-radius: 6px;
+        border: none;
+        background-color: #7065f0;
+        font-weight: 500;
+        cursor: pointer;
+        color: white;
+      }
+
+      textarea {
+        width: 100%;
+        padding: 12px;
+        margin-top: 20px;
+        border-radius: 8px;
+        border: 1px solid #cecece;
+        font-size: 15px;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .property-details-form {
+      width: 90%;
+    }
+  }
+}
