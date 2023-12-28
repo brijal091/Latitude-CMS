@@ -12,7 +12,7 @@ const Dashboard = () => {
 
   return (
     <div className="dashboard-container">
-      <DashNav />
+      {/* <DashNav /> */}
       <div className="dashboard-content">
         <div className="sidebar">
           <Sidebar showForm={showForm} setShowForm={setShowForm} />

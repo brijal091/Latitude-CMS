@@ -35,7 +35,7 @@ const NewClient = () => {
             <label>
               Upload Image<sup>*</sup>
             </label>
-            <input type="url" placeholder="Image Url" required />
+            <input type="url" placeholder="Url" required />
           </div>
 
           <div className="category">
@@ -50,7 +50,7 @@ const NewClient = () => {
           </div>
 
           <div className="button-container">
-            <button type="submit">Add New Client</button>
+            <button type="submit">Create New Client</button>
           </div>
         </form>
       </div>

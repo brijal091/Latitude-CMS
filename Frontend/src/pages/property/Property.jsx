@@ -52,8 +52,6 @@ const Property = () => {
           <button>Submit</button>
         </div>
       </div> */}
-
-
     </div>
   );
 };

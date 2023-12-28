@@ -1,13 +1,19 @@
-.client-form-container {
+.login-container {
   margin: auto;
   margin-top: 5%;
+  padding: 2% 5%;
+  // box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   text-align: left;
   align-items: center;
   border-radius: 5px;
   background-color: none;
+  width: 80%;
+  display: flex;
+  gap: 5%;
 
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
     // margin-top: 15%;
+
     box-shadow: none;
   }
 
@@ -15,14 +21,28 @@
     flex-direction: column;
     width: 90%;
     margin: auto;
-
     //  border: 1px solid red;
     margin-top: 5%;
   }
 
+  .login-image {
+    width: 50%;
+    overflow: hidden;
+    // border: 1px solid red;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @media only screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+
   .form-container {
     width: 50%;
-    margin: auto;
 
     @media only screen and (min-width: 768px) and (max-width: 1024px) {
     }
@@ -36,6 +56,7 @@
     }
 
     label {
+      color: #7065f0;
       font-weight: 700;
 
       sup {
@@ -44,8 +65,7 @@
     }
 
     input[type="email"],
-    input[type="text"],
-    input[type="url"] {
+    input[type="password"] {
       border: 1px solid rgba(0, 0, 0, 0.2);
       padding: 2%;
       border-radius: 10px;
@@ -55,16 +75,12 @@
       }
     }
 
-    input:focus {
-      outline: 1px solid #7065f0;
-    }
-
     input[type="submit"] {
       margin-top: 10px;
       cursor: pointer;
       font-size: 15px;
       background: #7065f0;
-
+      border: 1px solid #7065f0;
       color: #fff;
       padding: 10px 20px;
       border-radius: 25px;
@@ -73,21 +89,13 @@
       &:hover {
         background: none;
         color: grey;
-        border: 1px solid;
+        border: 1px solid #7065f0;
       }
     }
 
     .button-container {
-      text-align: center;
-
-      button {
-        padding: 3% 5%;
-        margin-top: 5%;
-        background-color: #7065f0;
-        color: white;
-        border: none;
-        border-radius: 5px;
-      }
+      display: flex;
+      justify-content: center;
     }
 
     .input-container {
@@ -95,28 +103,12 @@
       flex-direction: column;
       gap: 8px;
       margin: 15px;
-      text-align: left;
-
-      label {
-        text-align: left;
-      }
     }
 
     p {
+      color: #7065f0;
       font-weight: 700;
       margin: 15px;
-    }
-
-    .category {
-      display: flex;
-      gap: 20px;
-      margin-left: 3%;
-
-      select {
-        padding: 2%;
-        border-radius: 5px;
-        border: 1px solid rgba(0, 0, 0, 0.2);
-      }
     }
   }
 }
