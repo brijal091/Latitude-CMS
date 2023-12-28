@@ -1,0 +1,138 @@
+.property-listing {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f7f7fd;
+
+  .hero-content {
+    width: 100%;
+
+    .hero-content-text {
+      width: 75%;
+      margin: auto;
+
+      h1 {
+        font-size: 60px;
+        font-family: "Bebas Neue";
+        letter-spacing: 1px;
+      }
+
+      button {
+        margin-top: 25px;
+        padding: 13px 32px;
+        border-radius: 6px;
+        border: none;
+        background-color: #7065f0;
+        font-weight: 500;
+        cursor: pointer;
+        color: white;
+      }
+
+      .property-data {
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+
+        h1 {
+          font-size: 30px;
+          font-family: "Bebas Neue";
+          letter-spacing: 1px;
+          color: #7065f0;
+        }
+
+        p {
+          color: #727183;
+        }
+      }
+    }
+  }
+
+  .hero-img {
+    width: 100%;
+    img {
+      width: 100%;
+    //   height: 60vh;
+    //   object-fit: cover;
+    }
+  }
+
+  /* Media Query for Tablets and Mobiles */
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+
+    .hero-content {
+      margin-top: 30px;
+      .hero-content-text {
+        width: 90%;
+        margin: auto;
+
+        h1 {
+          font-size: 40px;
+        }
+
+        .property-data {
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+}
+
+.email-box {
+  margin-top: 80px;
+  width: 100%;
+  background-color: #100a55;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  .email-heading {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+
+    h2{
+        color: white;
+    }
+
+    p{
+        color: #727183;
+        margin-top: 10px;
+    }
+  }
+
+  .email-box-input {
+    width: 30%;
+    margin: auto;
+    margin-top: 30px;
+    align-items: center;
+    display: flex;
+
+    input {
+      width: 100%;
+      padding: 13px;
+      border: none;
+      border-top-left-radius: 6px;
+      border-bottom-left-radius: 6px;
+      outline: none;
+    }
+
+    button {
+      padding: 13px 32px;
+      border-top-right-radius: 6px;
+      border-bottom-right-radius: 6px;
+      border: none;
+      background-color: #7065f0;
+      font-weight: 500;
+      cursor: pointer;
+      color: white;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .email-box-input {
+        width: 90%;
+    }
+  }
+}
