@@ -1,7 +1,14 @@
 import React from "react";
 import "./newClient.scss";
+import { useNavigate } from "react-router-dom";
 
 const NewClient = () => {
+  const navigate = useNavigate();
+
+  const handleSubmit = () => {
+    navigate("/company/admin");
+  };
+
   return (
     <div className="client-form-container">
       <div className="form-container">
@@ -9,7 +16,7 @@ const NewClient = () => {
           <h2>Welcome</h2>
           <p>Don't have an account?</p>
         </div>
-        <form>
+        <form onSubmit={handleSubmit}>
           <div className="input-container">
             <label>
               Full Name <sup>*</sup>
@@ -31,7 +38,7 @@ const NewClient = () => {
             <input type="url" placeholder="Image Url" required />
           </div>
 
-          {/* <div className="category">
+          <div className="category">
             <label>
               Category <sup>*</sup>
             </label>
@@ -40,7 +47,7 @@ const NewClient = () => {
               <option>Hotel</option>
               <option>Ecommerce</option>
             </select>
-          </div> */}
+          </div>
 
           <div className="button-container">
             <button type="submit">Add New Client</button>

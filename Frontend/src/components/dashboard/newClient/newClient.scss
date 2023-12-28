@@ -8,7 +8,6 @@
 
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
     // margin-top: 15%;
-
     box-shadow: none;
   }
 
@@ -16,6 +15,7 @@
     flex-direction: column;
     width: 90%;
     margin: auto;
+
     //  border: 1px solid red;
     margin-top: 5%;
   }
@@ -56,11 +56,15 @@
       }
     }
 
+    input:focus {
+      outline: 1px solid #7065f0;
+    }
+
     input[type="submit"] {
       margin-top: 10px;
       cursor: pointer;
       font-size: 15px;
-      background: #04aa6d;
+      background: #7065f0;
 
       color: #fff;
       padding: 10px 20px;
@@ -80,7 +84,7 @@
       button {
         padding: 3% 5%;
         margin-top: 5%;
-        background-color: #04aa6d;
+        background-color: #7065f0;
         color: white;
         border: none;
         border-radius: 5px;
@@ -92,6 +96,11 @@
       flex-direction: column;
       gap: 8px;
       margin: 15px;
+      text-align: left;
+
+      label {
+        text-align: left;
+      }
     }
 
     p {

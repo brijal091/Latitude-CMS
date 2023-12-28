@@ -5,14 +5,11 @@ import { IoKeyOutline } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
 
 const Admin = () => {
-
   const navigate = useNavigate();
 
   const handleSubmit = () => {
     navigate("/admin/dashboard");
   };
-
-  
 
   return (
     <div className="admin-container">
