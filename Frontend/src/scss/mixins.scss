@@ -1,0 +1,11 @@
+@mixin divImgWrapper($width: auto, $height: auto) {
+  width: $width;
+  height: $height;
+  overflow: hidden;
+}
+
+@mixin img-wrapper {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
