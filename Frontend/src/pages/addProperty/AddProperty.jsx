@@ -7,7 +7,7 @@ const AddProperty = () => {
     phoneNumber: "",
     street: "",
     locality: "",
-    pictures:"",
+    pictures: "",
     zipCode: "",
     city: "",
     state: "",
@@ -67,8 +67,8 @@ const AddProperty = () => {
           />
           <br />
           <input
-           value={data.pictures}
-           onChange={(e) => handleChange(e, "pictures")}
+            value={data.pictures}
+            onChange={(e) => handleChange(e, "pictures")}
             type="file"
             placeholder="Add Pictures +"
           />
