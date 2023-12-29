@@ -3,33 +3,37 @@ import "./client.scss";
 
 import Sidebar from "../../components/dashboard/sidebar/Sidebar";
 import ClientDashboard from "./clientDashboard/ClientDashboard";
-
+import AddProperty from "../addProperty/AddProperty";
 
 const Client = () => {
+  const [showForm, setShowForm] = useState(false);
+  console.log("showform", showForm);
 
-    const [showForm, setShowForm] = useState(false);
+  const menuName = ["Dashboard", "Add New Product", "Help & Support"];
 
-    console.log("showform", showForm);
-    
-    
-    
-return (<div className="dashboard-container">
+  return (
+    <div className="dashboard-container">
       {/* <DashNav /> */}
       <div className="dashboard-content">
         <div className="sidebar">
-          <Sidebar showForm={showForm} setShowForm={setShowForm} />
+          <Sidebar
+            showForm={showForm}
+            setShowForm={setShowForm}
+            menuName={menuName}
+          />
         </div>
         {showForm ? (
-          <div className="new-user-form">
-            {/* <NewClient /> */}
+          <div className="new-product-form">
+            <AddProperty />
           </div>
         ) : (
-          <div className="user-details">
-             <ClientDashboard />
+          <div className="product-details">
+            <ClientDashboard />
           </div>
         )}
       </div>
     </div>
-)}
+  );
+};
 
 export default Client;

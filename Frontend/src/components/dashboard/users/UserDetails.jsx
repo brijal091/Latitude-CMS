@@ -24,7 +24,7 @@ const UserDetails = () => {
           <td>
             <div className="user-image-container">
               <div className="image-wrapper">
-                <img src={profileImage} alt="userImage" />
+                <img src={profileImage} alt="userImage" loading="lazy" />
               </div>
               <h4>Shailesh Sampat</h4>
             </div>
@@ -53,6 +53,7 @@ const UserDetails = () => {
                 <img
                   src="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445_1280.jpg"
                   alt="userImage"
+                  loading="lazy"
                 />
               </div>
               <h4>Vrushabh</h4>
@@ -82,6 +83,7 @@ const UserDetails = () => {
                 <img
                   src="https://cdn.pixabay.com/photo/2016/03/23/04/01/woman-1274056_1280.jpg"
                   alt="userImage"
+                  loading="lazy"
                 />
               </div>
               <h4>Brijal Kansar</h4>

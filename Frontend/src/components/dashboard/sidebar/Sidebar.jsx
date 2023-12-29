@@ -4,19 +4,20 @@ import { MdDashboardCustomize } from "react-icons/md";
 import { FaHandsHelping } from "react-icons/fa";
 import { IoIosPersonAdd } from "react-icons/io";
 
-const Sidebar = ({ showform, setShowForm }) => {
+const Sidebar = ({ showform, setShowForm, menuName }) => {
   return (
     <div className="sidebar-container">
       <div className="menu-name">MAIN MENU</div>
+
       <div className="sidebar-menu">
         <div onClick={() => setShowForm(false)}>
-          <MdDashboardCustomize /> Dashboard
+          <MdDashboardCustomize /> {menuName[0]}
         </div>
         <div onClick={() => setShowForm(true)}>
-          <IoIosPersonAdd /> Add New Client
+          <IoIosPersonAdd /> {menuName[1]}
         </div>
         <div>
-          <FaHandsHelping /> Help & Support
+          <FaHandsHelping /> {menuName[2]}
         </div>
       </div>
     </div>
