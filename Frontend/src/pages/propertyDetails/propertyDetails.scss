@@ -1,0 +1,120 @@
+.container {
+  width: 85%;
+  margin: auto;
+  margin-top: 50px;
+
+  .top-section {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+
+    .top-section-left {
+      p {
+        color: #8585a0;
+        margin-top: 8px;
+      }
+    }
+
+    .top-section-right {
+      display: flex;
+      gap: 20px;
+
+      div {
+        padding: 10px 20px;
+        border: 1px solid #7065f0;
+        color: #7065f0;
+        background-color: #f7f7fd;
+        font-size: 14px;
+        border-radius: 6px;
+      }
+    }
+  }
+
+  .bottom-section {
+    margin-top: 30px;
+
+    .bottom-section-images {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      height: 80vh;
+
+      .bottom-section-img-left {
+        img {
+          border-radius: 6px;
+          width: 100%;
+          height: 80vh;
+        }
+      }
+
+      .bottom-section-img-right {
+        height: 80vh;
+
+        :nth-child(2) {
+          margin-top: 25px;
+        }
+
+        img {
+          border-radius: 6px;
+          width: 100%;
+          height: 38vh;
+        }
+      }
+    }
+
+    .bottom-section-details {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+      margin-top: 40px;
+
+      .property-details {
+        border: 1px solid #cecece;
+        padding: 15px;
+        border-radius: 8px;
+
+        .about-property {
+          p {
+            text-align: left;
+            margin-top: 10px;
+          }
+        }
+      }
+
+      .contact-details {
+        border: 1px solid #cecece;
+        padding: 15px;
+        border-radius: 8px;
+
+        .price {
+          h3 {
+            color: #7065f0;
+          }
+        }
+
+        .contact {
+          p {
+            color: #8585a0;
+            margin-top: 20px;
+          }
+
+          h4 {
+            margin-top: 5px;
+          }
+        }
+
+        button {
+          margin-top: 30px;
+          padding: 13px;
+          width: 100%;
+          border-radius: 6px;
+          border: none;
+          background-color: #7065f0;
+          font-weight: 500;
+          font-size: 16px;
+          color: white;
+        }
+      }
+    }
+  }
+}

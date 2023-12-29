@@ -8,6 +8,8 @@ import Client from "../pages/client/Client";
 import AddProperty from "../pages/addProperty/AddProperty";
 import LandingPage from "../pages/property/LandingPage";
 import { ClientLogin } from "../pages/client/clientLogin/ClientLogin";
+import Properties from "../pages/property/properties/Properties";
+import PropertyDetails from "../pages/propertyDetails/PropertyDetails";
 
 const MainRoutes = () => {
   return (
@@ -20,6 +22,8 @@ const MainRoutes = () => {
       <Route path="/client" element={<Client />} />
       <Route path="/property" element={<LandingPage />} />
       <Route path="/add_property" element={<AddProperty />} />
+      <Route path="/properties" element={<Properties />} />
+      <Route path="/property_details" element={<PropertyDetails />} />
     </Routes>
   );
 };

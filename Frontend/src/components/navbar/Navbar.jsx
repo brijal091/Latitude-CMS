@@ -11,7 +11,7 @@ export default function Navbar() {
   };
 
   return (
-    <div className="navbar">
+    <div className="nav">
       <div className="navbar-content">
         <div className="menu-icon" onClick={toggleMenu}>
           {isOpen ? <FaTimes /> : <FaBars />}
