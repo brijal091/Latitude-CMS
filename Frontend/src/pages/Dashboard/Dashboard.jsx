@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./dashboard.scss";
-import DashNav from "../../components/dashboard/dashnav/DashNav";
+// import DashNav from "../../components/dashboard/dashnav/DashNav";
 import Sidebar from "../../components/dashboard/sidebar/Sidebar";
 import UserDetails from "../../components/dashboard/users/UserDetails";
 import NewClient from "../../components/dashboard/newClient/NewClient";
