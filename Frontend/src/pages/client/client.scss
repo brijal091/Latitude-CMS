@@ -1,0 +1,47 @@
+.dashboard-container {
+  .dashboard-content {
+    display: flex;
+    padding: 2%;
+    gap: 20px;
+
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    }
+
+    @media only screen and (max-width: 767px) {
+      flex-direction: column;
+      text-align: center;
+      gap: 0;
+    }
+
+    .sidebar {
+      width: 25%;
+      //   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+      padding: 2%;
+      height: 80vh;
+      border-radius: 5px;
+
+      @media only screen and (max-width: 767px) {
+        width: 90%;
+        height: auto;
+        margin: auto;
+      }
+    }
+
+    .product-details {
+      width: 70%;
+
+      @media only screen and (max-width: 767px) {
+        width: 100%;
+      }
+    }
+
+    .new-product-form {
+      width: 70%;
+
+      @media only screen and (max-width: 767px) {
+        width: 100%;
+      }
+    }
+  }
+}

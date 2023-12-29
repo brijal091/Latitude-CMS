@@ -8,14 +8,18 @@ import NewClient from "../../components/dashboard/newClient/NewClient";
 const Dashboard = () => {
   const [showForm, setShowForm] = useState(false);
 
-  console.log("showform", showForm);
+  const menuName = ["Dashboard", "Add New Client", "Help & Support"];
 
   return (
     <div className="dashboard-container">
       {/* <DashNav /> */}
       <div className="dashboard-content">
         <div className="sidebar">
-          <Sidebar showForm={showForm} setShowForm={setShowForm} />
+          <Sidebar
+            showForm={showForm}
+            setShowForm={setShowForm}
+            menuName={menuName}
+          />
         </div>
         {showForm ? (
           <div className="new-user-form">
