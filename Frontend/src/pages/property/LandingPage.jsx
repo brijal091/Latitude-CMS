@@ -10,7 +10,7 @@ const LandingPage = () => {
       <Hero />
       <About />
       <NewsLetter />
-      <Footer/>
+      <Footer />
     </div>
   );
 };
