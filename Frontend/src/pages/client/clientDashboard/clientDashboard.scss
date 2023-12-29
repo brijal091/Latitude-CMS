@@ -4,7 +4,7 @@
   .grid-table {
     // border: 1px solid red;
     display: grid;
-    grid-template-columns: 10% 20% 40% 10% 20%;
+    grid-template-columns: 10% 20% 30% 20% 20%;
 
     @media only screen and (max-width: 767px) {
       grid-template-columns: repeat(1, 1fr);
@@ -49,6 +49,10 @@
     @include divImgWrapper($width: 50px, $height: 50px);
     border-radius: 50%;
     border: 1px solid;
+
+    @media only screen and (max-width: 767px) {
+      margin: auto;
+    }
 
     img {
       @include img-wrapper;
