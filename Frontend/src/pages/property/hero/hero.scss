@@ -1,27 +1,71 @@
 .hero-section {
   width: 100%;
-  margin: auto;
-  margin-top: 50px;
-  display: flex;
-  align-items: center;
+  background-color: #f7f7fd;
 
   .hero-content {
-    width: 100%;
+    width: 85%;
+    margin: auto;
+    gap: 50px;
+    display: flex;
+    align-items: center;
 
-    .tags {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-size: 14px;
-      color: #7065f0;
+    .hero-content-text {
+      .tags {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 15px;
+        color: #7065f0;
+      }
+
+      h1 {
+        font-size: 50px;
+        margin-top: 10px;
+      }
+
+      p {
+        color: #8585a0;
+        margin-top: 15px;
+      }
+
+      button {
+        margin-top: 30px;
+        padding: 13px 32px;
+        border-radius: 6px;
+        border: none;
+        background-color: #7065f0;
+        font-weight: 500;
+        cursor: pointer;
+        font-size: 16px;
+        color: white;
+      }
     }
   }
 
   .hero-img {
     width: 100%;
+    margin-top: 20px;
 
     img {
       width: 100%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hero-content {
+      width: 90%;
+      flex-direction: column-reverse;
+      gap: 0px;
+
+      .hero-content-text {
+        h1 {
+          font-size: 40px;
+        }
+
+        button {
+          margin-bottom: 30px;
+        }
+      }
     }
   }
 }

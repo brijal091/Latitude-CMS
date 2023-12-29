@@ -1,0 +1,59 @@
+.email-box {
+    margin-top: 80px;
+    width: 100%;
+    background-color: #100a55;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  
+    .email-heading {
+      text-align: center;
+      width: 90%;
+      margin: auto;
+  
+      h2{
+          color: white;
+      }
+  
+      p{
+          color: #727183;
+          margin-top: 10px;
+      }
+    }
+  
+    .email-box-input {
+      width: 30%;
+      margin: auto;
+      margin-top: 30px;
+      align-items: center;
+      display: flex;
+  
+      input {
+        width: 100%;
+        padding: 13px;
+        border: none;
+        font-size: 16px;
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px;
+        outline: none;
+      }
+  
+      button {
+        padding: 13px 32px;
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+        border: none;
+        font-size: 16px;
+        background-color: #7065f0;
+        font-weight: 500;
+        cursor: pointer;
+        color: white;
+      }
+    }
+  
+    @media (max-width: 768px) {
+      .email-box-input {
+          width: 90%;
+      }
+    }
+  }
+  
