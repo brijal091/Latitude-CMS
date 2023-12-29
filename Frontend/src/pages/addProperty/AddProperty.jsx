@@ -22,12 +22,12 @@ const AddProperty = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // try {
-    //   const res = await axios.post("", data);
-    //   console.log("Res:", res.data);
-    // } catch (error) {
-    //   console.error("Error:", error);
-    // }
+    try {
+      const res = await axios.post("", data);
+      console.log("Response:", res.data);
+    } catch (error) {
+      console.error("Error:", error);
+    }
     console.log("data of property:", data);
   };
 
