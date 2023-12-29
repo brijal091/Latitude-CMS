@@ -4,9 +4,7 @@ import "./clientLogin.scss";
 import loginImage from "../../../assets/images/loginImage.jpg";
 
 export const ClientLogin = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const { clientId } = useParams();
 
@@ -14,7 +12,7 @@ export const ClientLogin = () => {
 
   const handleLogin = async (e) => {
     e.preventDefault();
-     navigate('/add_property')
+    navigate(`/client/${clientId}`);
   };
 
   return (
