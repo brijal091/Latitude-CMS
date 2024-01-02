@@ -22,7 +22,7 @@
       margin-top: 20px;
 
       input {
-        width: 100%;
+        width: 90%;
         padding: 12px;
         margin-top: 20px;
         border-radius: 8px;
@@ -33,7 +33,7 @@
       input[type="submit"] {
         margin-top: 25px;
         padding: 13px;
-        width: 105%;
+        width: 94%;
         border-radius: 6px;
         border: none;
         background-color: #7065f0;
@@ -43,7 +43,7 @@
       }
 
       textarea {
-        width: 100%;
+        width: 90%;
         padding: 12px;
         margin-top: 20px;
         border-radius: 8px;
@@ -56,6 +56,7 @@
   @media (max-width: 768px) {
     .property-details-form {
       width: 90%;
+      margin: auto;
     }
   }
 }

@@ -4,6 +4,7 @@ import "./client.scss";
 import Sidebar from "../../components/dashboard/sidebar/Sidebar";
 import ClientDashboard from "./clientDashboard/ClientDashboard";
 import AddProperty from "../addProperty/AddProperty";
+import Demo from "./clientDashboard/Demo";
 
 const Client = () => {
   const [showForm, setShowForm] = useState(false);
@@ -28,7 +29,8 @@ const Client = () => {
           </div>
         ) : (
           <div className="product-details">
-            <ClientDashboard />
+            {/* <ClientDashboard /> */}
+            <Demo />
           </div>
         )}
       </div>

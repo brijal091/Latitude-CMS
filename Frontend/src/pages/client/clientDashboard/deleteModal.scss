@@ -1,0 +1,32 @@
+.delete-modal-card {
+  .btn-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+  }
+
+  .cancelBtn {
+    padding: 3% 8%;
+    border-radius: 5px;
+    background-color: #7065f0;
+    color: white;
+    border: none;
+  }
+
+  .deleteBtn {
+    padding: 3% 5%;
+    border-radius: 5px;
+    background: none;
+    color: #7065f0;
+    border: 1px solid #7065f0;
+  }
+}
+
+.closeBtn {
+  margin-top: 5%;
+  padding: 3% 8%;
+  border-radius: 5px;
+  background-color: #7065f0;
+  color: white;
+  border: none;
+}
