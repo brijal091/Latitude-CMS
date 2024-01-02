@@ -31,13 +31,15 @@ const Admin = () => {
       if (response.data.jwtData) {
         alert("Login Sucessful");
         navigate("/admin/dashboard");
-      } else {
-        alert("Please try again");
       }
     } catch (error) {
       console.error("Error:", error);
+
+      alert("Something went wrong please try again later");
     }
   };
+
+  console.log("formState", formState);
 
   return (
     <div className="admin-container">

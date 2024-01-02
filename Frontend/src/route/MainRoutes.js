@@ -10,6 +10,7 @@ import LandingPage from "../pages/property/LandingPage";
 import { ClientLogin } from "../pages/client/clientLogin/ClientLogin";
 import Properties from "../pages/property/properties/Properties";
 import PropertyDetails from "../pages/propertyDetails/PropertyDetails";
+import EditProperty from "../pages/client/editProperty/EditProperty";
 
 const MainRoutes = () => {
   return (
@@ -24,6 +25,7 @@ const MainRoutes = () => {
       <Route path="/add_property" element={<AddProperty />} />
       <Route path="/properties" element={<Properties />} />
       <Route path="/property_details" element={<PropertyDetails />} />
+      <Route path="/client/edit" element={<EditProperty />} />
     </Routes>
   );
 };

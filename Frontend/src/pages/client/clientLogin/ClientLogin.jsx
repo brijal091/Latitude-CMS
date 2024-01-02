@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import "./clientLogin.scss";
-import loginImage from "../../../assets/images/loginImage.jpg";
+import propertyImage from "../../../assets/images/propertyImage.jpg";
 
 export const ClientLogin = () => {
   const navigate = useNavigate();
@@ -18,7 +18,7 @@ export const ClientLogin = () => {
   return (
     <div className="login-container">
       <div className="login-image">
-        <img src={loginImage} alt="login-img" loading="lazy" />
+        <img src={propertyImage} alt="login-img" loading="lazy" />
       </div>
 
       <div className="form-container">
