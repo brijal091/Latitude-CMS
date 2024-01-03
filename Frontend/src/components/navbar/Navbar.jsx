@@ -16,14 +16,14 @@ export default function Navbar() {
         <div className="menu-icon" onClick={toggleMenu}>
           {isOpen ? <FaTimes /> : <FaBars />}
         </div>
-        <Link to="/" className="remove-link-decor">
+        <Link to="/property" className="remove-link-decor">
           <div className="logo">
             <h1>propify.</h1>
           </div>{" "}
         </Link>
 
         <div className="nav-links">
-          <Link to="/" className="remove-link-decor">
+          <Link to="/property" className="remove-link-decor">
             <p>Home</p>{" "}
           </Link>
           <Link to="/properties" className="remove-link-decor">
@@ -46,16 +46,16 @@ export default function Navbar() {
       {isOpen && (
         <div className="mobile-menu">
           <div className="nav-links">
-            <Link to="/" className="remove-link-decor">
-              {" "}
+            <Link to="/property" className="remove-link-decor">
               <p>Home</p>{" "}
             </Link>
-            <Link to="/" className="remove-link-decor">
+            <Link to="/properties" className="remove-link-decor">
               {" "}
-              <p>Rooms</p>
+              <p>Properties</p>{" "}
             </Link>
-            <Link to="/" className="remove-link-decor">
-              <p>Facilities</p>
+            <Link to="/offers" className="remove-link-decor">
+              {" "}
+              <p>Offers</p>{" "}
             </Link>
             <Link to="/login" className="remove-link-decor">
               <p>Login</p>

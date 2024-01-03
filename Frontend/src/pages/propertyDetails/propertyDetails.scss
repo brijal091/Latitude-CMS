@@ -2,6 +2,7 @@
   width: 85%;
   margin: auto;
   margin-top: 50px;
+  margin-bottom: 50px;
 
   .top-section {
     display: flex;
@@ -26,6 +27,9 @@
         background-color: #f7f7fd;
         font-size: 14px;
         border-radius: 6px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
       }
     }
   }
@@ -77,6 +81,26 @@
           p {
             text-align: left;
             margin-top: 10px;
+          }
+        }
+
+        .ameneties {
+          margin-top: 30px;
+
+          .ameneties-box {
+            margin-top: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+
+            div {
+              padding: 8px 14px;
+              border-radius: 6px;
+              border: 1px solid #7065f0;
+              color: #7065f0;
+              background-color: #f7f7fd;
+              font-size: 13px;
+            }
           }
         }
       }
