@@ -1,5 +1,6 @@
 import React from "react";
 import "../propertyDetails/propertyDetails.scss";
+import { FaRegHeart, FaShareAlt } from "react-icons/fa";
 
 const PropertyDetails = () => {
   return (
@@ -11,8 +12,12 @@ const PropertyDetails = () => {
         </div>
 
         <div className="top-section-right">
-          <div>Share </div>
-          <div>Favourite</div>
+          <div>
+            Share <FaShareAlt />
+          </div>
+          <div>
+            Favourite <FaRegHeart />
+          </div>
         </div>
       </div>
 
@@ -57,6 +62,20 @@ const PropertyDetails = () => {
                 electronic typesetting, remaining essentially unchanged.
               </p>
             </div>
+
+            <div className="ameneties">
+              <h3>Ameneties</h3>
+
+              <div className="ameneties-box">
+                <div>Parking</div>
+                <div>Furniture</div>
+                <div>Balcany</div>
+                <div>Gym</div>
+                <div>Servant Room</div>
+                <div>Garden</div>
+                <div>Swimming Pool</div>
+              </div>
+            </div>
           </div>
 
           <div className="contact-details">
@@ -73,10 +92,6 @@ const PropertyDetails = () => {
 
               <p>Email Address</p>
               <h4>rammohan234@gmail.com</h4>
-            </div>
-
-            <div>
-              <div></div>
             </div>
           </div>
         </div>

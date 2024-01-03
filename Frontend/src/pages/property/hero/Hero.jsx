@@ -1,6 +1,7 @@
 import React from "react";
 import "../hero/hero.scss";
 import heroImg from "../../../assets/images/for-sale.png";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -19,7 +20,9 @@ const Hero = () => {
             without any commisions.
           </p>
 
-          <button>Explore Properties</button>
+          <Link to="/properties">
+            <button>Explore Properties</button>
+          </Link>
         </div>
 
         <div className="hero-img">
