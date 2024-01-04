@@ -34,7 +34,7 @@
       h1 {
         font-family: "Nanum Pen Script";
         font-style: italic;
-        color: $primary-color;
+        color: #2650a4;
       }
     }
 
@@ -55,13 +55,13 @@
     }
 
     .book-now-btn {
-      border: none;
+      border: 1px solid #2650a4;
       padding: 10px 20px;
       border-radius: 5px;
-      background-color: $primary-color;
+      background: none;
       font-weight: 500;
       cursor: pointer;
-      color: white;
+      color: #2650a4;
 
       @media screen and (max-width: 48em) {
         padding: 8px 18px;

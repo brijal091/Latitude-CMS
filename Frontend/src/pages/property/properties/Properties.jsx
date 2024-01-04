@@ -10,8 +10,8 @@ const Properties = () => {
 
   const fetchData = async () => {
     try {
-      const response = await api.get("/properties");
-      setProperties(response.data);
+      const res = await api.get("/properties");
+      setProperties(res.data);
     } catch (error) {
       console.error(error);
     }
@@ -19,7 +19,7 @@ const Properties = () => {
 
   useEffect(() => {
     fetchData();
-  }, []);
+  }, []); 
 
   return (
     <div className="properties">
