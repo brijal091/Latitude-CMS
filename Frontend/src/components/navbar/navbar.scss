@@ -1,4 +1,4 @@
-// @import "../../scss/base.scss";
+@import "../../scss/base.scss";
 
 .nav {
   background-color: #f7fafc;
@@ -34,7 +34,7 @@
       h1 {
         font-family: "Nanum Pen Script";
         font-style: italic;
-        color: #7065f0;
+        color: $primary-color;
       }
     }
 
@@ -58,7 +58,7 @@
       border: none;
       padding: 10px 20px;
       border-radius: 5px;
-      background-color: #7065f0;
+      background-color: $primary-color;
       font-weight: 500;
       cursor: pointer;
       color: white;

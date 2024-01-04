@@ -1,3 +1,5 @@
+@import "../../../scss/base.scss";
+
 .hero-section {
   width: 100%;
   background-color: #f7f7fd;
@@ -15,7 +17,7 @@
         align-items: center;
         gap: 10px;
         font-size: 15px;
-        color: #7065f0;
+        color: $primary-color;
       }
 
       h1 {
@@ -33,7 +35,7 @@
         padding: 13px 32px;
         border-radius: 6px;
         border: none;
-        background-color: #7065f0;
+        background-color: $primary-color;
         font-weight: 500;
         cursor: pointer;
         font-size: 16px;

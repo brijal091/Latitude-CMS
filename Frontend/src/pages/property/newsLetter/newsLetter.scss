@@ -1,3 +1,5 @@
+@import "../../../scss/base.scss";
+
 .email-box {
   margin-top: 80px;
   width: 100%;
@@ -43,7 +45,7 @@
       border-bottom-right-radius: 6px;
       border: none;
       font-size: 16px;
-      background-color: #7065f0;
+      background-color: $primary-color;
       font-weight: 500;
       cursor: pointer;
       color: white;

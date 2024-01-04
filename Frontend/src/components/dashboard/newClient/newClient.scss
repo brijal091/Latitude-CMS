@@ -1,3 +1,5 @@
+@import "../../../scss/base.scss";
+
 .client-form-container {
   margin: auto;
   margin-top: 5%;
@@ -54,14 +56,14 @@
     }
 
     input:focus {
-      outline: 1px solid #7065f0;
+      outline: 1px solid $primary-color;
     }
 
     input[type="submit"] {
       margin-top: 10px;
       cursor: pointer;
       font-size: 15px;
-      background: #7065f0;
+      background: $primary-color;
 
       color: #fff;
       padding: 10px 20px;
@@ -81,7 +83,7 @@
       button {
         padding: 3% 5%;
         margin-top: 5%;
-        background-color: #7065f0;
+        background-color: $primary-color;
         color: white;
         border: none;
         border-radius: 5px;

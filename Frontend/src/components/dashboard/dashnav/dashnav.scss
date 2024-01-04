@@ -1,7 +1,7 @@
-// @import "../../scss/base.scss";
+@import "../../../scss/base.scss";
 
 .navbar {
-  background-color: #7065f0;
+  background-color: $primary-color;
   color: #fff;
   padding: 10px;
   padding-left: 1rem;
@@ -91,5 +91,17 @@
         text-decoration: none;
       }
     }
+  }
+
+  .profile {
+    position: relative;
+  }
+
+  .profile-name {
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    background-color: red;
+    width: 200px;
   }
 }
