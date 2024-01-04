@@ -9,7 +9,7 @@ const NewClient = () => {
     password: "",
     isClient: true,
     email: "",
-    projectCategory: "Property",
+    projectCategory: "PROPERTY",
     profile: "",
   });
 
@@ -30,12 +30,6 @@ const NewClient = () => {
       );
 
       console.log("Response data:", response.data);
-      // if (response.data.jwtData) {
-      //   alert("Login Sucessful");
-      //   navigate("/admin/dashboard");
-      // } else {
-      //   alert("Please try again");
-      // }
     } catch (error) {
       console.error("Error:", error);
     }
