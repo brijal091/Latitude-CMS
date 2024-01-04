@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import "./client.scss";
-
 import Sidebar from "../../components/dashboard/sidebar/Sidebar";
-import ClientDashboard from "./clientDashboard/ClientDashboard";
 import AddProperty from "../addProperty/AddProperty";
-import Demo from "./clientDashboard/Demo";
 import DashNav from "../../components/dashboard/dashnav/DashNav";
+import ClientDashboard from "../../components/clientDashboard/ClientDashboard";
 
 const Client = () => {
   const [showForm, setShowForm] = useState(false);
@@ -15,7 +13,7 @@ const Client = () => {
 
   return (
     <div className="dashboard-container">
-      {/* <DashNav /> */}
+      <DashNav />
       {/* <ClientProfile /> */}
       <div className="dashboard-content">
         <div className="sidebar">
@@ -31,8 +29,7 @@ const Client = () => {
           </div>
         ) : (
           <div className="product-details">
-            {/* <ClientDashboard /> */}
-            <Demo />
+            <ClientDashboard />
           </div>
         )}
       </div>

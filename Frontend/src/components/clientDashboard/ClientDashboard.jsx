@@ -1,11 +1,10 @@
 import React from "react";
-import "./demo.scss";
-import Modal from "./Modal";
-import ModalDemo from "./Modal";
-import { useNavigate } from "react-router-dom";
-import DeleteModal from "./DeleteModal";
+import "./clientDashboard.scss";
 
-const Demo = () => {
+import DeleteModal from "./DeleteModal";
+import { useNavigate } from "react-router-dom";
+
+const ClientDashboard = () => {
   const arr = [
     {
       image:
@@ -70,7 +69,7 @@ const Demo = () => {
   return (
     <div className="demo">
       <div className="properties-heading">
-        <h1>All Properties</h1>
+        <h1>My Properties</h1>
       </div>
 
       <div className="properties-grid">
@@ -86,8 +85,6 @@ const Demo = () => {
             </div>
             <div className="btns">
               <button onClick={() => navigate("/client/edit")}>Edit</button>
-              {/* <ModalDemo {...item} /> */}
-              {/* <button className="delBtn">Delete</button> */}
               <button>
                 <DeleteModal />
               </button>
@@ -99,4 +96,4 @@ const Demo = () => {
   );
 };
 
-export default Demo;
+export default ClientDashboard;

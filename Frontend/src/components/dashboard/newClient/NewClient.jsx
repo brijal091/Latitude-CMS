@@ -25,7 +25,7 @@ const NewClient = () => {
 
     try {
       const response = await axios.post(
-        "https://sore-gray-wildebeest-belt.cyclic.app/api/auth/createuser",
+        "https://testyourapp.online:4203/cms-backend/api/auth/createuser",
         formState,
       );
 
@@ -87,6 +87,7 @@ const NewClient = () => {
               type="password"
               required
               placeholder="Password"
+              minLength="8"
               name="password"
               value={formState.password}
               onChange={handleChange}
@@ -109,9 +110,8 @@ const NewClient = () => {
               value={formState.projectCategory}
               onChange={handleChange}
             >
-              <option>Property</option>
-              <option>Hotel</option>
-              <option>Ecommerce</option>
+              <option>PROPERTY</option>
+              <option>HOTEL</option>
             </select>
           </div>
 

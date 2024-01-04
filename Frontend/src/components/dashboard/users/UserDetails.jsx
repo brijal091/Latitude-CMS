@@ -7,6 +7,7 @@ import profileImage from "../../../assets/images/profileImage.png";
 const UserDetails = () => {
   const arr = [
     {
+      id: 1,
       name: "Shailesh Sampat",
       image:
         "https://cdn.pixabay.com/photo/2017/07/11/00/24/house-2492054_1280.png",
@@ -14,6 +15,7 @@ const UserDetails = () => {
       category: "Property",
     },
     {
+      id: 2,
       name: "Vrushabh Veer",
       image:
         "https://cdn.pixabay.com/photo/2017/07/11/00/24/house-2492054_1280.png",
@@ -36,7 +38,7 @@ const UserDetails = () => {
         </div>
 
         {arr.map((item) => (
-          <div className="grid-table row">
+          <div className="grid-table row" key={item.id}>
             <div>
               {" "}
               <input type="checkbox" />

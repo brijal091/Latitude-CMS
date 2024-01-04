@@ -5,15 +5,19 @@ import propertyImage from "../../../assets/images/propertyImage.jpg";
 
 export const ClientLogin = () => {
   const navigate = useNavigate();
-
   const { clientId } = useParams();
 
-  console.log("clientId", clientId);
+  const [formState, setFormState] = useState({
+    email: "",
+    password: "",
+  });
 
   const handleLogin = async (e) => {
     e.preventDefault();
     navigate(`/client/${clientId}`);
   };
+
+  console.log("clientId", clientId);
 
   return (
     <div className="login-container">
@@ -43,12 +47,10 @@ export const ClientLogin = () => {
               type="password"
               required
               placeholder="Password"
-              minlength="8"
+              minLength="8"
             />
           </div>
-
           <p>Forgot Password</p>
-
           <div className="button-container">
             <input type="submit" />
           </div>
