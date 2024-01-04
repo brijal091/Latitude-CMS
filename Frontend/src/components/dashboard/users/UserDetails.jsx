@@ -1,28 +1,33 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./userDetails.scss";
 import { FaRegEdit } from "react-icons/fa";
 import { IoTrashBinOutline } from "react-icons/io5";
 import profileImage from "../../../assets/images/profileImage.png";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const UserDetails = () => {
-  const arr = [
-    {
-      id: 1,
-      name: "Shailesh Sampat",
-      image:
-        "https://cdn.pixabay.com/photo/2017/07/11/00/24/house-2492054_1280.png",
-      contact: "shailesh@gmail.com",
-      category: "Property",
-    },
-    {
-      id: 2,
-      name: "Vrushabh Veer",
-      image:
-        "https://cdn.pixabay.com/photo/2017/07/11/00/24/house-2492054_1280.png",
-      contact: "vrushabh@gmail.com",
-      category: "Hotel",
-    },
-  ];
+  const [userData, setUserData] = useState([]);
+  const navigate = useNavigate();
+
+  const headers = {
+    "Content-Type": "application/json",
+    "auth-token":
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjU4YWJlODg4MDcxZDQwYjkzM2JkMWQwIn0sImlhdCI6MTcwMzY2ODk2OH0.AIr0E1cWvzH78UgqS4iNHWz9vGpXgZFBUkYt4v674Bc",
+  };
+
+  useEffect(() => {
+    axios
+      .post(
+        "https://testyourapp.online:4203/cms-backend/api/client/get-clients",
+        {},
+        {
+          headers: headers,
+        },
+      )
+      .then((r) => setUserData(r.data))
+      .catch((e) => console.log(e));
+  }, []);
 
   return (
     <div>
@@ -37,8 +42,8 @@ const UserDetails = () => {
           <div className="item5">Action</div>
         </div>
 
-        {arr.map((item) => (
-          <div className="grid-table row" key={item.id}>
+        {userData?.map((item) => (
+          <div className="grid-table row" key={item._id}>
             <div>
               {" "}
               <input type="checkbox" />
@@ -47,10 +52,10 @@ const UserDetails = () => {
               <div className="image-wrapper">
                 <img src={profileImage} alt="userImage" loading="lazy" />
               </div>
-              <h4>{item.name}</h4>
+              <h4>{item.userName}</h4>
             </div>
-            <div>{item.contact}</div>
-            <div>{item.category}</div>
+            <div>{item.email}</div>
+            <div>{item.projectCategory}</div>
 
             <div className="user-edit-icons">
               <div className="user-icons">
