@@ -1,8 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../propertyDetails/propertyDetails.scss";
 import { FaRegHeart, FaShareAlt } from "react-icons/fa";
+import api from "../../apis/api";
+import { useParams } from "react-router-dom";
 
 const PropertyDetails = () => {
+  const [properties, setProperties] = useState({});
+  const params = useParams();
+  api();
+
+  const fetchData = async () => {
+    try {
+      const response = await api.get(`/properties/${params.propertyId}`);
+      setProperties(response.data);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  console.log(properties.amenities);
   return (
     <div className="container">
       <div className="top-section">
@@ -67,13 +87,16 @@ const PropertyDetails = () => {
               <h3>Ameneties</h3>
 
               <div className="ameneties-box">
-                <div>Parking</div>
-                <div>Furniture</div>
+                {properties.amenities?.map((item) => (
+                  <div>{item}</div>
+                ))}
+
+                {/* <div>Furniture</div>
                 <div>Balcany</div>
                 <div>Gym</div>
                 <div>Servant Room</div>
                 <div>Garden</div>
-                <div>Swimming Pool</div>
+                <div>Swimming Pool</div> */}
               </div>
             </div>
           </div>

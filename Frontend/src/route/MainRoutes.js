@@ -24,7 +24,7 @@ const MainRoutes = () => {
       <Route path="/property" element={<LandingPage />} />
       <Route path="/add_property" element={<AddProperty />} />
       <Route path="/properties" element={<Properties />} />
-      <Route path="/property_details" element={<PropertyDetails />} />
+      <Route path="/property/:propertyId" element={<PropertyDetails />} />
       <Route path="/client/edit" element={<EditProperty />} />
     </Routes>
   );
