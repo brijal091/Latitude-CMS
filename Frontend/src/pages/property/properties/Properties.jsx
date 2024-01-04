@@ -30,11 +30,15 @@ const Properties = () => {
       <div className="properties-grid">
         {properties.map((item) => (
           <div className="property-card" key={item.id}>
-           <Link to={`/property/${item.id}`}>
-           <div className="property-img">
-              <img src={item.image.img1} alt="property-img" loading="loading" />
-            </div>
-           </Link>
+            <Link to={`/property/${item.id}`}>
+              <div className="property-img">
+                <img
+                  src={item.image.img1}
+                  alt="property-img"
+                  loading="loading"
+                />
+              </div>
+            </Link>
 
             <div className="property-detail">
               <h3>₹ {item.price}</h3>

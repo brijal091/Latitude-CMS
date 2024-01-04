@@ -23,7 +23,7 @@ const Admin = () => {
 
     try {
       const response = await axios.post(
-        "https://sore-gray-wildebeest-belt.cyclic.app/api/auth/login",
+        "https://testyourapp.online:4203/cms-backend/api/auth/login",
         formState,
       );
 
@@ -68,6 +68,7 @@ const Admin = () => {
             required
             placeholder="Enter Your Password"
             name="password"
+            minLength="8"
             value={formState.password}
             onChange={handleChange}
           />
