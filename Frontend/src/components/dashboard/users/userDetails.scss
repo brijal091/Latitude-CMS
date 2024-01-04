@@ -1,55 +1,64 @@
 @import "../../../scss/base.scss";
 
-#customers {
-  font-family: Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-  font-size: 15px;
-  border-radius: 5px;
-  //   overflow: hidden;
+@import "../../../scss/base.scss";
 
-  @media only screen and (max-width: 767px) {
-    // border: 1px solid;
-    width: 90%;
-    margin: auto;
+.userDetails-container {
+  .grid-table {
+    // border: 1px solid red;
+    display: grid;
+    grid-template-columns: 5% 35% 30% 20% 10%;
+
+    @media only screen and (max-width: 767px) {
+      grid-template-columns: repeat(1, 1fr);
+      // text-align: center;
+    }
   }
 
-  //   .client-data{
+  input {
+    @media only screen and (max-width: 767px) {
+      display: none;
+    }
+  }
 
-  //     @media only screen and (max-width: 767px) {
-  //         border: 1px solid;
-  //         width: 90%;
-  //         margin: 10px auto;
-  //       }
-
-  //   }
-
-  .user-image-container {
+  .header {
     align-items: center;
-    display: flex;
-    gap: 20px;
-
-    @media only screen and (max-width: 767px) {
-      flex-direction: column;
-    }
-  }
-
-  td,
-  th {
-    padding: 8px;
-    @media only screen and (max-width: 767px) {
-      display: block;
-    }
-  }
-
-  th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
+    padding: 3% 0px;
     background-color: #f7fafc;
 
     @media only screen and (max-width: 767px) {
       display: none;
+    }
+
+    div {
+      //   border: 1px solid;
+      font-size: large;
+      font-weight: 900;
+    }
+  }
+
+  .row {
+    margin-top: 1%;
+    align-items: center;
+    // border: 1px solid red;
+
+    div {
+      // border: 1px solid;
+      padding: 3%;
+      // margin: auto;
+    }
+  }
+
+  .user-image-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      flex-direction: column;
+    }
+
+    @media only screen and (max-width: 767px) {
+       flex-direction: column;
     }
   }
 
@@ -57,6 +66,10 @@
     @include divImgWrapper($width: 50px, $height: 50px);
     border-radius: 50%;
     border: 1px solid;
+
+    @media only screen and (max-width: 767px) {
+      margin: auto;
+    }
 
     img {
       @include img-wrapper;
@@ -76,12 +89,6 @@
       & :hover {
         cursor: pointer;
       }
-    }
-  }
-
-  input {
-    @media only screen and (max-width: 767px) {
-      display: none;
     }
   }
 }

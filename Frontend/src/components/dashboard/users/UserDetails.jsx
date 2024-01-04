@@ -5,63 +5,51 @@ import { IoTrashBinOutline } from "react-icons/io5";
 import profileImage from "../../../assets/images/profileImage.png";
 
 const UserDetails = () => {
+  const arr = [
+    {
+      name: "Shailesh Sampat",
+      image:
+        "https://cdn.pixabay.com/photo/2017/07/11/00/24/house-2492054_1280.png",
+      contact: "shailesh@gmail.com",
+      category: "Property",
+    },
+    {
+      name: "Vrushabh Veer",
+      image:
+        "https://cdn.pixabay.com/photo/2017/07/11/00/24/house-2492054_1280.png",
+      contact: "vrushabh@gmail.com",
+      category: "Hotel",
+    },
+  ];
+
   return (
     <div>
-      <table id="customers">
-        <tr>
-          <th>
+      <div className="userDetails-container">
+        <div className="grid-table header">
+          <div className="item1">
             <input type="checkbox" />
-          </th>
-          <th>Client Name</th>
-          <th>Contact</th>
-          <th>Category</th>
-          <th>Action</th>
-        </tr>
-        <tr className="client-data">
-          <td>
-            <input type="checkbox" />
-          </td>
-          <td>
+          </div>
+          <div className="item2">Client Name</div>
+          <div className="item3">Contact</div>
+          <div className="item4">Category</div>
+          <div className="item5">Action</div>
+        </div>
+
+        {arr.map((item) => (
+          <div className="grid-table row">
+            <div>
+              {" "}
+              <input type="checkbox" />
+            </div>
             <div className="user-image-container">
               <div className="image-wrapper">
                 <img src={profileImage} alt="userImage" loading="lazy" />
               </div>
-              <h4>Shailesh Sampat</h4>
+              <h4>{item.name}</h4>
             </div>
-          </td>
-          <td>shailesh@gmail.com</td>
-          <td className="property">Property</td>
-          <td>
-            <div className="user-edit-icons">
-              <div className="user-icons">
-                <FaRegEdit />
-              </div>
-              <div className="user-icons">
-                <IoTrashBinOutline />
-              </div>
-            </div>
-          </td>
-        </tr>
+            <div>{item.contact}</div>
+            <div>{item.category}</div>
 
-        <tr className="client-data">
-          <td>
-            <input type="checkbox" />
-          </td>
-          <td>
-            <div className="user-image-container">
-              <div className="image-wrapper">
-                <img
-                  src="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445_1280.jpg"
-                  alt="userImage"
-                  loading="lazy"
-                />
-              </div>
-              <h4>Vrushabh</h4>
-            </div>
-          </td>
-          <td>vrushabh@gmail.com</td>
-          <td className="hotel">Hotel</td>
-          <td>
             <div className="user-edit-icons">
               <div className="user-icons">
                 <FaRegEdit />
@@ -70,39 +58,9 @@ const UserDetails = () => {
                 <IoTrashBinOutline />
               </div>
             </div>
-          </td>
-        </tr>
-
-        <tr className="client-data">
-          <td>
-            <input type="checkbox" />
-          </td>
-          <td>
-            <div className="user-image-container">
-              <div className="image-wrapper">
-                <img
-                  src="https://cdn.pixabay.com/photo/2016/03/23/04/01/woman-1274056_1280.jpg"
-                  alt="userImage"
-                  loading="lazy"
-                />
-              </div>
-              <h4>Brijal Kansar</h4>
-            </div>
-          </td>
-          <td>brijal@gmail.com</td>
-          <td className="ecom">Ecom</td>
-          <td>
-            <div className="user-edit-icons">
-              <div className="user-icons">
-                <FaRegEdit />
-              </div>
-              <div className="user-icons">
-                <IoTrashBinOutline />
-              </div>
-            </div>
-          </td>
-        </tr>
-      </table>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

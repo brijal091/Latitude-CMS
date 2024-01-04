@@ -23,9 +23,12 @@ const DashNav = () => {
           </div>{" "}
         </Link>
 
-        <button className="book-now-btn">
-          <CiUser />
-        </button>
+        <div className="profile">
+          <button className="book-now-btn">
+            <CiUser />
+          </button>
+          <div className="profile-name">Shailesh Sampat</div>
+        </div>
       </div>
 
       {isOpen && (

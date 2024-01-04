@@ -39,7 +39,12 @@ export const ClientLogin = () => {
             <label>
               Password <sup>*</sup>{" "}
             </label>
-            <input type="password" required placeholder="Password" />
+            <input
+              type="password"
+              required
+              placeholder="Password"
+              minlength="8"
+            />
           </div>
 
           <p>Forgot Password</p>
